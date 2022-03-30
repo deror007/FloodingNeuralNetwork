@@ -175,7 +175,7 @@ class MLP:
 
     def train(self, epochs):
         #Retrieve dataset and shuffle order each epoch.
-        trainDF = pd.read_excel (r'C:\Users\deror\OneDrive\Desktop\AICourseworkDataset.xlsx', sheet_name='Train')  
+        trainDF = pd.read_excel (r'AICourseworkDataset.xlsx', sheet_name='Train')  #Inside the speech marks is where you place the directory of your dataset.
         
 
         #Set of assessment models to empty set after each epoch
@@ -245,7 +245,7 @@ class MLP:
     #Validation set 
     def validate(self):
         print("validate")
-        validDF = pd.read_excel (r'C:\Users\deror\OneDrive\Desktop\AICourseworkDataset.xlsx', sheet_name='Validation')
+        validDF = pd.read_excel (r'AICourseworkDataset.xlsx', sheet_name='Validation') #Inside the speech marks is where you place the directory of your dataset.
         #Empty array every for every call.
         predictions=[]
         observations=[]
@@ -304,7 +304,7 @@ class MLP:
         print("Test")
         
         #Retrieve test results
-        testDF = pd.read_excel (r'C:\Users\deror\OneDrive\Desktop\AICourseworkDataset.xlsx', sheet_name='Test')
+        testDF = pd.read_excel (r'AICourseworkDataset.xlsx', sheet_name='Test') #Inside the speech marks is where you place the directory of your dataset.
         
         #Empty array every for every call.
         predictions=[]
